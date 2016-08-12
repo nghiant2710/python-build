@@ -21,7 +21,7 @@ do
 				sed -e s~#{ALPINE_ONLY}~''~g build.tpl > build.sh
 			;;
 			'aarch64')
-				sed -e s~#{FROM}~resin/aarch64-debian:wheezy~g Dockerfile.debian.tpl > Dockerfile
+				sed -e s~#{FROM}~nghiant2710/aarch64-debian:latest~g Dockerfile.debian.tpl > Dockerfile
 				sed -e s~#{ALPINE_ONLY}~''~g build.tpl > build.sh
 			;;
 			'i386')
@@ -49,7 +49,7 @@ do
 				sed -e s~#{ALPINE_ONLY}~''~g build.tpl > build.sh
 			;;
 			'fedora-aarch64')
-				sed -e s~#{FROM}~resin/aarch64-fedora:24~g Dockerfile.fedora.tpl > Dockerfile
+				sed -e s~#{FROM}~nghiant2710/aarch64-fedora:24~g Dockerfile.fedora.tpl > Dockerfile
 				sed -e s~#{ALPINE_ONLY}~''~g build.tpl > build.sh
 			;;
 		esac
